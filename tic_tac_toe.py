@@ -1,8 +1,15 @@
 # Tic Tac Toe
 
+import os
 from tkinter import *
 import tkinter.font as tkFont
 import tkinter.messagebox
+import server
+import client
+
+# CREATE CONNECTION
+server.createServer()
+client.connectToServer()
 
 root = Tk()
 root.title('Tic-Tac-Toe                 [JMRBDev_]')
